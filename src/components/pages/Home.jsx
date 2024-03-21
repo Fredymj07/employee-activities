@@ -1,14 +1,36 @@
-/* Code Written By: Fredy Montaña */
-/* Date: 21 Marzo 2019 */
-
+import Table from "react-bootstrap/Table";
 
 const home = () => {
-    console.log("Home props");
-    return (
-        <div className="container">
-            <h1>Home page...</h1>
-        </div>
-    );
-}
+	return (
+		<div className="container">
+			<h3 className="mt-5">Lista de actividades</h3>
+
+			<Table striped bordered hover className="mt-5">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+				</tbody>
+			</Table>
+		</div>
+	);
+};
 
 export default home;

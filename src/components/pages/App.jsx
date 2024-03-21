@@ -1,7 +1,3 @@
-/* Code Written By: Fredy Montaña */
-/* Date: 21 Marzo 2019 */
-
-
 import "../../App.css";
 import Header from "../layouts/Header";
 import Footer from "../layouts/Footer";

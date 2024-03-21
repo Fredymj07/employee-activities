@@ -1,12 +1,8 @@
-/* Code Written By: Fredy Montaña */
-/* Date: 21 Marzo 2019 */
-
-
 import styled from "styled-components";
 
 const footer = () => {
 	return (
-		<FooterContainer className="main-footer">
+		<FooterContainer className="main-footer mt-5">
 			<div className="footer-middle">
 				<div className="container">
 					<div className="row">
@@ -68,6 +64,9 @@ export default footer;
 
 const FooterContainer = styled.footer`
     .footer-middle {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
         background: var(--mainDark);
         padding-top: 3rem;
         color: var(--mainWhite);
