@@ -4,7 +4,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 const activityDetail = () => {
 	return (
 		<div className="container">
-			<h1 className="mt-5">Detalle de actividad</h1>
+			<h4 className="mt-5">Detalle de actividad</h4>
 			<Card className="mt-5" style={{ width: "18rem" }}>
 				<Card.Body>
 					<Card.Title>Card Title</Card.Title>

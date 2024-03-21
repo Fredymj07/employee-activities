@@ -4,7 +4,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 const UserProfile = () => {
     return (
         <div className="container">
-			<h1 className="mt-5">Perfil de usuario</h1>
+			<h4 className="mt-5">Perfil de usuario</h4>
 			<Card className="mt-5" style={{ width: "18rem" }}>
 				<Card.Body>
 					<Card.Title>Card Title</Card.Title>

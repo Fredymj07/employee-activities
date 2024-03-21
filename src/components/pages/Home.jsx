@@ -3,7 +3,7 @@ import Table from "react-bootstrap/Table";
 const home = () => {
 	return (
 		<div className="container">
-			<h3 className="mt-5">Lista de actividades</h3>
+			<h4 className="mt-5">Lista de actividades</h4>
 
 			<Table striped bordered hover className="mt-5">
 				<thead>

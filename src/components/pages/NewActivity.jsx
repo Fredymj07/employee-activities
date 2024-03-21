@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 const newActivity = () => {
 	return (
 		<div className="container">
-			<h3 className="mt-5">Crear nueva actividad</h3>
+			<h4 className="mt-5">Crear nueva actividad</h4>
 			<Form className="mt-5">
 				<Row className="mb-3">
 					<Form.Group as={Col} controlId="formGridEmail">
