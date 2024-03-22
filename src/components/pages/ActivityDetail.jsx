@@ -1,7 +1,7 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 
-const activityDetail = () => {
+export default function activityDetail() {
 	return (
 		<div className="container">
 			<h4 className="mt-5">Detalle de actividad</h4>
@@ -10,7 +10,7 @@ const activityDetail = () => {
 					<Card.Title>Card Title</Card.Title>
 					<Card.Text>
 						Some quick example text to build on the card title and
-						make up the bulk of the card's content.
+						make up the bulk of the cards content.
 					</Card.Text>
 				</Card.Body>
 				<ListGroup className="list-group-flush">
@@ -25,6 +25,4 @@ const activityDetail = () => {
 			</Card>
 		</div>
 	);
-};
-
-export default activityDetail;
+}

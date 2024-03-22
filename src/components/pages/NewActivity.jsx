@@ -3,7 +3,7 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 
-const newActivity = () => {
+export default function newActivity() {
 	return (
 		<div className="container">
 			<h4 className="mt-5">Crear nueva actividad</h4>
@@ -60,6 +60,4 @@ const newActivity = () => {
 			</Form>
 		</div>
 	);
-};
-
-export default newActivity;
+}

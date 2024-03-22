@@ -1,6 +1,6 @@
 import Table from "react-bootstrap/Table";
 
-const home = () => {
+export default function home() {
 	return (
 		<div className="container">
 			<h4 className="mt-5">Lista de actividades</h4>
@@ -31,6 +31,4 @@ const home = () => {
 			</Table>
 		</div>
 	);
-};
-
-export default home;
+}
