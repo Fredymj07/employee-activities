@@ -1,7 +1,7 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 
-const UserProfile = () => {
+export default function UserProfile() {
     return (
         <div className="container">
 			<h4 className="mt-5">Perfil de usuario</h4>
@@ -10,7 +10,7 @@ const UserProfile = () => {
 					<Card.Title>Card Title</Card.Title>
 					<Card.Text>
 						Some quick example text to build on the card title and
-						make up the bulk of the card's content.
+						make up the bulk of the cards content.
 					</Card.Text>
 				</Card.Body>
 				<ListGroup className="list-group-flush">
@@ -26,5 +26,3 @@ const UserProfile = () => {
 		</div>
     );
 }
-
-export default UserProfile;

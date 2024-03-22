@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const footer = () => {
+export default function footer() {
 	return (
 		<FooterContainer className="main-footer mt-5">
 			<div className="footer-middle">
@@ -59,8 +59,6 @@ const footer = () => {
 		</FooterContainer>
 	);
 }
-
-export default footer;
 
 const FooterContainer = styled.footer`
     .footer-middle {
