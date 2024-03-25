@@ -7,43 +7,24 @@ export default function footer() {
 				<div className="container">
 					<div className="row">
 						{/* Column 1 */}
-						<div className="col-md-3 col-sm-6">
-							<h4>Lorem ipsum</h4>
+						<div className="col-md-4 col-sm-6">
+							<h4>Fredy Montaña</h4>
 							<ul className="list-unstyled">
-								<li>Lorem ipsum</li>
-								<li>Lorem ipsum</li>
-								<li>Lorem ipsum</li>
-								<li>Lorem ipsum</li>
+								<li>fredy.montana-a@uniminuto.edu.co</li>
 							</ul>
 						</div>
 						{/* Column 2 */}
-						<div className="col-md-3 col-sm-6">
-							<h4>Lorem ipsum</h4>
+						<div className="col-md-4 col-sm-6">
+							<h4>Geovani Rincón</h4>
 							<ul className="list-unstyled">
-								<li>Lorem ipsum</li>
-								<li>Lorem ipsum</li>
-								<li>Lorem ipsum</li>
-								<li>Lorem ipsum</li>
+								<li>geovani.rincon@uniminuto.edu.co</li>
 							</ul>
 						</div>
 						{/* Column 3 */}
-						<div className="col-md-3 col-sm-6">
-							<h4>Lorem ipsum</h4>
+						<div className="col-md-4 col-sm-6">
+							<h4>Alberto Montaña</h4>
 							<ul className="list-unstyled">
-								<li>Lorem ipsum</li>
-								<li>Lorem ipsum</li>
-								<li>Lorem ipsum</li>
-								<li>Lorem ipsum</li>
-							</ul>
-						</div>
-						{/* Column 4 */}
-						<div className="col-md-3 col-sm-6">
-							<h4>Lorem ipsum</h4>
-							<ul className="list-unstyled">
-								<li>Lorem ipsum</li>
-								<li>Lorem ipsum</li>
-								<li>Lorem ipsum</li>
-								<li>Lorem ipsum</li>
+								<li>jesus.montana@uniminuto.edu.co</li>
 							</ul>
 						</div>
 					</div>
