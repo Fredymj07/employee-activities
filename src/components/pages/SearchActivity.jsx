@@ -6,16 +6,8 @@ import Row from "react-bootstrap/Row";
 export default function newActivity() {
 	return (
 		<div className="container">
-			<h4 className="mt-5">Crear nueva actividad</h4>
+			<h4 className="mt-5">Buscar actividad</h4>
 			<Form className="mt-5">
-				<Form.Group as={Col} controlId="formGridActividad">
-					<Form.Label>Actividad</Form.Label>
-					<Form.Control
-						type="text"
-						placeholder="Nombre actividad a realizar"
-					/>
-				</Form.Group>
-				<br />
 				<Row className="mb-3">
 					<Form.Group as={Col} controlId="formGridFecha">
 						<Form.Label>Fecha</Form.Label>
@@ -34,6 +26,21 @@ export default function newActivity() {
 					</Form.Group>
 				</Row>
 
+				<br />
+				<Button variant="primary" type="submit">
+					Submit
+				</Button>
+				<br />
+				<br />
+
+				<Form.Group as={Col} controlId="formGridActividad">
+					<Form.Label>Actividad</Form.Label>
+					<Form.Control
+						type="text"
+						placeholder="Nombre actividad a realizar"
+					/>
+				</Form.Group>
+				<br />
 				<Form.Group className="mb-3" controlId="formGridDescripcion">
 					<Form.Label>Descripción</Form.Label>
 					<textarea
@@ -42,14 +49,6 @@ export default function newActivity() {
 						rows="3"
 						placeholder="Resumen actividad programada"></textarea>
 				</Form.Group>
-
-				<Form.Group className="mb-3" id="formGridCheckbox">
-					<Form.Check type="checkbox" label="Estoy de Acuerdo" />
-				</Form.Group>
-				<br />
-				<Button variant="primary" type="submit">
-					Submit
-				</Button>
 			</Form>
 		</div>
 	);
