@@ -7,20 +7,19 @@ export default function UserProfile() {
 			<h4 className="mt-5">Perfil de usuario</h4>
 			<Card className="mt-5" style={{ width: "18rem" }}>
 				<Card.Body>
-					<Card.Title>Card Title</Card.Title>
+					<Card.Title>Usuario de Prueba</Card.Title>
 					<Card.Text>
-						Some quick example text to build on the card title and
-						make up the bulk of the cards content.
+						Usuario para realizar pruebas iniciales de la App de actividades de empleado.
 					</Card.Text>
 				</Card.Body>
 				<ListGroup className="list-group-flush">
-					<ListGroup.Item>Cras justo odio</ListGroup.Item>
-					<ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-					<ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+					<ListGroup.Item>Correo: usuario123@dominio.com</ListGroup.Item>
+					<ListGroup.Item>Password: ********</ListGroup.Item>
+					<ListGroup.Item>Tipo: pruebas</ListGroup.Item>
 				</ListGroup>
 				<Card.Body>
-					<Card.Link href="#">Card Link</Card.Link>
-					<Card.Link href="#">Another Link</Card.Link>
+					<Card.Link href="#">Anterior</Card.Link>
+					<Card.Link href="#">Siguiente</Card.Link>
 				</Card.Body>
 			</Card>
 		</div>
