@@ -1,19 +1,21 @@
-import "../../css/App.css";
+import '../../css/App.css';
 // React Router Import
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
 // Pages Import
-import Home from "../pages/Home";
-import NewActivity from "../pages/NewActivity";
-import SearchActivity from "../pages/SearchActivity";
-import ActivityDetail from "../pages/ActivityDetail";
-import UserProfile from "../pages/UserProfile";
-import Layout from "../layouts/Layout";
-import Login from "../pages/Login";
+import Api from './Api';
+import Home from '../pages/Home';
+import NewActivity from '../pages/NewActivity';
+import SearchActivity from '../pages/Api';
+import ActivityDetail from '../pages/ActivityDetail';
+import UserProfile from '../pages/UserProfile';
+import Layout from '../layouts/Layout';
+import Login from '../pages/Login';
 
 export default function app() {
 	return (
 		<div>
 			<Routes>
+				<Route path="/api" element={<Api />} />
 				<Route path="/" element={<Layout />}>
 					<Route path="/home" element={<Home />} />
 					<Route path="/new-activity" element={<NewActivity />} />
