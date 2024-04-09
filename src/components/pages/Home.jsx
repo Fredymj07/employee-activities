@@ -1,9 +1,30 @@
+import React, { useEffect } from "react";
 import Table from "react-bootstrap/Table";
 
-export default function home() {
+export default function Home() {
+	const [data, setData] = React.useState("Esperando data...");
+
+	const getData = async () => {
+		try {
+			fetch("http://localhost:3000/home")
+				.then((res) => res.json())
+				.then((data) => setData(data.message));
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	useEffect(() => {
+		(async () => {
+			await getData();
+		})();
+	}, []);
+
 	return (
 		<div className="container">
 			<h4 className="mt-5">Lista de actividades</h4>
+
+			<h4>{!data ? "Loading..." : data}</h4>
 
 			<Table striped bordered hover className="mt-5">
 				<thead>
@@ -28,14 +49,20 @@ export default function home() {
 						<td>Entrevista Candidato</td>
 						<td>2024-03-27</td>
 						<td>14:30</td>
-						<td>Entrevista con el candidato para el puesto de desarrollo web.</td>
+						<td>
+							Entrevista con el candidato para el puesto de
+							desarrollo web.
+						</td>
 					</tr>
 					<tr>
 						<td>3</td>
 						<td>Capacitación</td>
 						<td>2024-03-30</td>
 						<td>09:00</td>
-						<td>Sesión de capacitación sobre nuevas herramientas de diseño.</td>
+						<td>
+							Sesión de capacitación sobre nuevas herramientas de
+							diseño.
+						</td>
 					</tr>
 				</tbody>
 			</Table>
