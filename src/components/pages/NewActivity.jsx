@@ -1,12 +1,34 @@
+import React, { useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 
-export default function newActivity() {
+export default function NewActivity() {
+	const [data, setData] = React.useState("Esperando data...");
+
+	const getData = async () => {
+		try {
+			fetch("http://localhost:3000/new-activity")
+				.then((res) => res.json())
+				.then((data) => setData(data.message));
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	useEffect(() => {
+		(async () => {
+			await getData();
+		})();
+	}, []);
+
 	return (
 		<div className="container">
 			<h4 className="mt-5">Crear nueva actividad</h4>
+
+			<h4>{!data ? "Loading..." : data}</h4>
+
 			<Form className="mt-5">
 				<Form.Group as={Col} controlId="formGridActividad">
 					<Form.Label>Actividad</Form.Label>

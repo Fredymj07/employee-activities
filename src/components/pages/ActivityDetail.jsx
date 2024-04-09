@@ -1,10 +1,32 @@
+import React, { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 
-export default function activityDetail() {
+export default function ActivityDetail() {
+	const [data, setData] = React.useState("Esperando data...");
+
+	const getData = async () => {
+		try {
+			fetch("http://localhost:3000/activity-detail")
+				.then((res) => res.json())
+				.then((data) => setData(data.message));
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	useEffect(() => {
+		(async () => {
+			await getData();
+		})();
+	}, []);
+
 	return (
 		<div className="container">
 			<h4 className="mt-5">Detalle de actividad</h4>
+
+			<h4>{!data ? "Loading..." : data}</h4>
+
 			<Card className="mt-5" style={{ width: "18rem" }}>
 				<Card.Body>
 					<Card.Title>Reunión Equipo</Card.Title>
