@@ -1,30 +1,10 @@
-import React, { useEffect } from "react";
 import Table from "react-bootstrap/Table";
 
 export default function Home() {
-	const [data, setData] = React.useState("Esperando data...");
-
-	const getData = async () => {
-		try {
-			fetch("http://localhost:3000/home")
-				.then((res) => res.json())
-				.then((data) => setData(data.message));
-		} catch (error) {
-			console.error(error);
-		}
-	};
-
-	useEffect(() => {
-		(async () => {
-			await getData();
-		})();
-	}, []);
 
 	return (
 		<div className="container">
 			<h4 className="mt-5">Lista de actividades</h4>
-
-			<h4>{!data ? "Loading..." : data}</h4>
 
 			<Table striped bordered hover className="mt-5">
 				<thead>

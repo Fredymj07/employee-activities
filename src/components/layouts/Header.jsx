@@ -23,8 +23,8 @@ export default function header() {
 						<Nav.Link href="/activity-detail">
 							Detalle de actividad
 						</Nav.Link>
-						<Nav.Link href="/user-profile">
-							Perfil de usuario
+						<Nav.Link href="/employees">
+							Empleados
 						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>

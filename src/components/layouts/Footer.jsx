@@ -32,7 +32,6 @@ export default function footer() {
 					<div className="footer-bottom">
 						<p className="text-xs-center">
 							&copy;{new Date().getFullYear()} Employee Activities
-							- All Rights Reserverd
 						</p>
 					</div>
 				</div>
